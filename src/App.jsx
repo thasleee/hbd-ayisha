@@ -376,7 +376,7 @@ const App = () => {
               className="firework"
             />
             <img
-              src="/src/assets/images/Firework.webp"
+              src="./Firework.webp"
               alt="Firework"
               className="firework"
             />
