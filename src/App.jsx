@@ -366,12 +366,12 @@ const App = () => {
         <div className="birthday-celebration">
           <div className="fireworks">
             <img
-              src="/src/assets/images/Firework.webp"
+              src="./Firework.webp"
               alt="Firework"
               className="firework"
             />
             <img
-              src="/src/assets/images/giphy.webp"
+              src="./giphy.webp"
               alt="Firework"
               className="firework"
             />
