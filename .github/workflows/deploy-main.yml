@@ -29,11 +29,14 @@ jobs:
       - name: Build project
         run: npm run build
 
+      - name: List files after build
+        run: ls -la ./dist  # Debug step to verify files
+
       - name: Upload production-ready build files
         uses: actions/upload-artifact@v3
         with:
           name: production-files
-          path: ./build
+          path: ./dist  # Correct output directory
 
   deploy:
     name: Deploy
@@ -49,12 +52,12 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: production-files
-          path: ./build
+          path: ./dist
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build
-          destination_branch: gh-pages  # Specify the branch
-          force_orphan: true  # Create branch if it doesn't exist
+          publish_dir: ./dist  # Correct output directory
+          destination_branch: gh-pages
+          force_orphan: true
