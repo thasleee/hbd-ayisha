@@ -437,7 +437,7 @@ Happiest birthday to the gal who makes my heart race in the best way possible! W
 
 To me, your birthday is the most special day of the year. Guess why? Cuz inniki oru naal thaan unkitta pesa mudiyuthu. Hmmmmmmm. Wish everyday could be Dec third. Lol. 
 
-Once again, Happy Birthday gal! 💓"
+Once again, Happy Birthday gal 💓"
             />
           </div>
         </div>
